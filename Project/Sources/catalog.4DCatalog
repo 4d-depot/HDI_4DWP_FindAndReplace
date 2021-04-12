@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE base SYSTEM "http://www.4d.com/dtd/2007/base.dtd" >
+<base name="HDI_4DWP_FindAndReplace" uuid="89D3E6F80FA9EA408A0E251A8569EC50" collation_locale="fr">
+	<schema name="DEFAULT_SCHEMA"/>
+	<table name="(Person)" uuid="FBBDC96593D94B38AB14C39DC216761A" id="1" hide_in_REST="true">
+		<field name="ID" uuid="B268C085BD58477B94C0F1F1693D0ECE" type="4" unique="true" autosequence="true" not_null="true" id="1"/>
+		<field name="OB_Field" uuid="D1DF4559DEF94E3785DE64C7BDB7A6AA" type="21" never_null="true" id="2"/>
+		<primary_key field_name="ID" field_uuid="B268C085BD58477B94C0F1F1693D0ECE"/>
+		<table_extra trashed="true" input_form="(Input)" output_form="(Output)">
+			<editor_table_info displayable_fields_count="6">
+				<color red="255" green="255" blue="255" alpha="0"/>
+				<coordinates left="73.91015625" top="40.39453125" width="120" height="167.33203125"/>
+			</editor_table_info>
+		</table_extra>
+	</table>
+	<table name="SAMPLES" uuid="373049FBC27B4679BB600FC556A05850" id="3">
+		<field name="ID" uuid="A6E58BB01FF1407482262079B5A1922D" type="4" unique="true" autosequence="true" not_null="true" id="1"/>
+		<field name="wpSample" uuid="35C07DCBFEBB4747A3C229B95F85D5EE" type="21" blob_switch_size="2147483647" never_null="true" id="2"/>
+		<field name="wpComments" uuid="82A98A7E817B4CB6B85D50966B536166" type="21" blob_switch_size="2147483647" never_null="true" id="3"/>
+		<field name="Page" uuid="4146432195F54520A0E96A6072874B84" type="4" never_null="true" id="4"/>
+		<primary_key field_name="ID" field_uuid="A6E58BB01FF1407482262079B5A1922D"/>
+		<table_extra input_form="Input" output_form="List">
+			<editor_table_info displayable_fields_count="4">
+				<color red="255" green="255" blue="255" alpha="0"/>
+				<coordinates left="256.140625" top="34.08984375" width="182.078125" height="138.2421875"/>
+			</editor_table_info>
+		</table_extra>
+	</table>
+	<index kind="regular" unique_keys="true" uuid="36DB253C7002437B8EF3A2BF4120B161" type="7">
+		<field_ref uuid="B268C085BD58477B94C0F1F1693D0ECE" name="ID">
+			<table_ref uuid="FBBDC96593D94B38AB14C39DC216761A" name="(Person)"/>
+		</field_ref>
+	</index>
+	<index kind="regular" unique_keys="true" uuid="9F0A7D5AE4AC4E49B1DB241459A71A43" type="7">
+		<field_ref uuid="A6E58BB01FF1407482262079B5A1922D" name="ID">
+			<table_ref uuid="373049FBC27B4679BB600FC556A05850" name="SAMPLES"/>
+		</field_ref>
+	</index>
+	<base_extra data_file_path=":HowDoI.4DD" package_name="HDI_4DWP_AutoFitHeaders" structure_file_name="HowDoI" __stringCompHash="icu:68.1.0" __keywordBuildingHash="icu:68.1.0">
+		<journal_file journal_file_enabled="false"/>
+	</base_extra>
+</base>

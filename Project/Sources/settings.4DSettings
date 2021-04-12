@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="UTF-8"?><preferences stamp="55">
+	<com.4d>
+		<general allow_user_settings="false" startup_environnement="1"/>
+		<interface>
+			<user flush_window="false" print_progress="false" splash_screen="false"/>
+			<shortcuts>
+				<accept_input_form alt="false" command="false" ctrl="false" key_code="0" shift="false"/>
+				<cancel_input_form alt="false" command="false" ctrl="false" key_code="0" shift="false"/>
+				<add_subform alt="false" command="false" ctrl="false" key_code="0" shift="false"/>
+			</shortcuts>
+			<developper display_toolbar="true"/>
+          		</interface>
+		<database>
+			<cache size_fixed="32" size_maximum="100" size_reserved="128"/>
+			<misc/>
+		</database>
+		<web>
+			<standalone_server>
+				<configuration allow_ssl="false" automatic_session_management="false" port_number="80" publish_at_startup="true"/>
+				<misc/>
+				<rest launch_at_startup="true"/>
+				<options>
+					<cache cache_max_size="524288" use_4d_web_cache="false"/>
+					<web_processes max_concurrent="200" preemptive="true"/>
+				</options>
+			</standalone_server>
+			<remote>
+				<configuration allow_ssl="false" automatic_session_management="false"/>
+				<misc/>
+				<options>
+					<cache use_4d_web_cache="false"/>
+				</options>
+			</remote>
+		</web>
+		<compiler>
+			<options compilation_path="3" symbol_file="false"/>
+			<typage default_for_button="2"/>
+		</compiler>
+		<server>
+			<network>
+				<options publication_name="HowDoI" use_legacy_network_layer="false"/>
+			</network>
+		</server>
+		<php ip_address="127.0.0.1"/>
+		<deployment>
+			<options/>
+		</deployment>
+          	</com.4d>
+  </preferences>
